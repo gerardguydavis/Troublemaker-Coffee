@@ -89,6 +89,7 @@ textarea {
 
 .hero-content-wrapper {
   background: url("../img/cafe-interior.jpg") center no-repeat;
+  background-position: top;
   background-size: cover;
   padding: 200px 0;
   margin: 0;
@@ -129,6 +130,31 @@ textarea {
 
 .logo img {
   width: 100%;
+}
+
+.content-wrapper {
+  padding: 50px 0;
+  background-color: #ccb485;
+}
+
+main h2 {
+  font-family: "Rokkitt", serif;
+}
+
+footer {
+  background-color: #241906;
+}
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons svg {
+  width: 50px;
+  padding: 20px 30px;
 }
 /* ==========================================================================
    Helper classes
@@ -225,6 +251,7 @@ textarea {
 @media only screen and (min-width: 1200px) {
   .navbar li {
     margin: 0 50px;
+    font-size: 1.25em;
   }
 
   .navbar li img {
@@ -232,9 +259,20 @@ textarea {
   }
   
   .logo {
-    width: 250px;
+    width: 300px;
     padding: 0;
-    margin: 0;
+    margin: 0 -50px;
+  }
+
+  main .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-basis: 1200px;
+  }
+
+  .home-grid {
+    display: grid;
+    max-width: 1200px;
   }
 }
 /* ==========================================================================
